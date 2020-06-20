@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #000;
+    --head-color: #ffffdd;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--head-color);
+}
+
+h1 {
+    color: var(--head-color);
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+form>input {
+    width: 30%;
+    padding: 1%;
+    color: #000;
+}
+
+#todos input {
+    background-color: var(--bg-color);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid chartreuse;
+    width: 33%;
+    color: var(--head-color);
+    padding: 0.5%;
+    margin-bottom: 1.5%;
+}
+
+#btn {
+    width: 8%;
+}
+
+#btn:hover {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid chartreuse;
+    background: linear-gradient(to right bottom, chartreuse, var(--head-color));
+}
+
+li button {
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--head-color);
+}
+
+li button:hover {
+    cursor: pointer;
+    color: #f64b3c;
+}
+
+@media screen and (max-width:650px) {
+    form input {
+        width: 50%;
+    }
+
+    #btn {
+        width: 10%;
+    }
+}
