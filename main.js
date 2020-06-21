@@ -1,12 +1,13 @@
 const input = document.getElementById('input-text');
 const add = document.getElementById('btn');
 add.addEventListener('click', addList);
-// input.addEventListener('keyup',function(e){
-//     e.preventDefault();
-//     if(e.keyCode==13){
-//         addList();
-//     }
-// });
+input.addEventListener('keypress',function(e){ 
+    if(e.keyCode==13){
+        e.preventDefault();
+        addList();
+    }
+});
+
 function addList(e) {
     const todos = document.getElementById('todos');
     const newLi = document.createElement('li');
